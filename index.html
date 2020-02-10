@@ -9,14 +9,14 @@
 	color: white;
 	padding: 16px;
 	font-size: 16px;
-	border: solid green 6px;
+	border:solid green 6px;
 	cursor: pointer;
 	float: left;
 }
 
 .dropdown {
 	position: relative;
-	
+
 	display: inline-block;
 
 }
@@ -28,22 +28,25 @@
 	z-index: 1;
 }
 .dropdown-content a {
-	color: solid green;
+	color: green;
 	padding: 10px 10px;
 	text-decoration: none;
 	display: block;
 }
-.dropdown-content a:hover {background-color: white}
-.dropdown:hover .dropbtn {background-color: grey}
+.dropdown-content a:hover {background-color: white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: grey;}
 </style>
 </head>
 <body>
 
 
 
-<!-- <div id="container"></div>
- -->
-<div id="header"></div>
+  <!--<div id="container"></div>-->
+
+ <!--<div id="header"></div>-->
 <div class="dropdown">
 	<button class="dropbtn">Menu</button>
 	<div class="dropdown-content">
@@ -51,7 +54,7 @@
 	<a href=#>~/Linux!</a>
 	<a href=#>~/Python!</a>
 	</div>
-</div>	
+</div>
 <!-- <div id="sidebar"></div> -->
 <div id="content"><p><strong>theclicommander@theterminal:~/#</strong> Welcome to The Terminal! I'm the SysAdmin, you can call me TheCliCommander. Explore the filesystem and learn something new!</p></div>
 <!-- <div id="footer">Footer Goes Here</div> -->
