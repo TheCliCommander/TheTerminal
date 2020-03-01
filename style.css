@@ -10,7 +10,7 @@ background-color: black;
  font-color: green;
  font-size: 24px
 }
-p {
+p, h1,h2,h3,h4,h5,h6{
  color: green;
 }
 /*#container {
