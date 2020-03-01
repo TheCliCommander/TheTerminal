@@ -74,7 +74,7 @@ p {
 	font-size: 16px;
 	border:solid green 6px;
 	cursor: pointer;
-	align-items: left
+	
 }
 
 .dropdown {
@@ -85,7 +85,7 @@ p {
 }
 .dropdown-content {
 	display: none;
-	position: absolute;
+	position: relative;
 	background-color: black;
 	min-width: 160px;
 	z-index: 1;
@@ -96,7 +96,7 @@ p {
 	text-decoration: none;
 	display: block;
 }
-.dropdown-content a:hover {background-color: white;}
+.dropdown-content a:hover {background-color: grey;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
