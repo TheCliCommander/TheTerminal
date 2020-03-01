@@ -58,7 +58,7 @@ p {
 }
 #footer {
  width: auto;
- height: 150px;
+ height: auto;
  margin: 0;
  padding: 0;
  border: 0;
@@ -101,3 +101,40 @@ p {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: grey;}
+
+
+
+.dropbtn1 {
+	background-color: black;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border:solid green 6px;
+	cursor: pointer;
+	
+}
+
+.dropdown1 {
+	position: relative;
+
+	display: inline-block;
+
+}
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 160px;
+	z-index: 1;
+}
+.dropdown-content1 a {
+	color: green;
+	padding: 10px 10px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content1 a:hover {background-color: grey;}
+
+.dropdown1:hover .dropdown-content1 {display: block;}
+
+.dropdown1:hover .dropbtn1 {background-color: grey;}
