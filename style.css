@@ -1,34 +1,40 @@
 body {
- background-image: url("comodore64.png");
- background-size: no-repeat fill; 
+background-color: black;
+ /*background-image: url("comodore64.png");
+ background-size: cover;
+ background-repeat: no-repeat;*/
  /*margin: 0;*/
  /*padding: 0;*/
+ font-family: monospace;
+ text-align: center;
+ font-color: green;
+ font-size: 24px
 }
-a {
- color: #2b2bf6;
+p {
+ color: green;
 }
-#container {
+/*#container {
   width: 1000px;
   margin: 0;
   padding: 0;
   background: #6d6466;
-}
+}*/
 #header {
- width: 1000px;
- height: 150px;
+ width: auto;
+ height: auto;
  margin: 0;
  padding: 0;
  border: 0;
- background: transparent;
+ background: black;
 }
 #header {
  font-family: monospace;
  font-size: 36px;
- color: #142f7a;
+ color: green;
 }
 #sidebar {
- width: 150px;
- height: 850px;
+ width: 250px;
+ height: 150px;
  margin: 0;
  padding: 0;
  border: 0;
@@ -36,28 +42,29 @@ a {
  background: transparent;
 }
 #content {
- width: 1000px;
- height: 850px;
- margin: 150;
- padding: 0;
+ width: auto;
+ height: auto;
+ /*margin: 150;
+ padding: 0;*/
  border: 0;
  float: left;
- background: transparent;
+ background: black;
 }
 #content p {
  font-family: monospace;
  font-size: 14px;
- color: green;
+ color: #dddddd;
+
 }
 #footer {
- width: 1000px;
+ width: auto;
  height: 150px;
  margin: 0;
  padding: 0;
  border: 0;
  float: left;
  background: transparent;
- clear:both;
+ /*clear:both;*/
 }
 
 .dropbtn {
@@ -67,7 +74,7 @@ a {
 	font-size: 16px;
 	border:solid green 6px;
 	cursor: pointer;
-	float: left;
+	align-items: left
 }
 
 .dropdown {
