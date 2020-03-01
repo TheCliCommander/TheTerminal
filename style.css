@@ -1,7 +1,8 @@
 body {
  background-image: url("comodore64.png");
- margin: 0;
- padding: 0;
+ background-size: no-repeat fill; 
+ /*margin: 0;*/
+ /*padding: 0;*/
 }
 a {
  color: #2b2bf6;
@@ -58,3 +59,38 @@ a {
  background: transparent;
  clear:both;
 }
+
+.dropbtn {
+	background-color: black;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border:solid green 6px;
+	cursor: pointer;
+	float: left;
+}
+
+.dropdown {
+	position: relative;
+
+	display: inline-block;
+
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 160px;
+	z-index: 1;
+}
+.dropdown-content a {
+	color: green;
+	padding: 10px 10px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content a:hover {background-color: white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: grey;}
