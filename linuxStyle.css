@@ -1,10 +1,6 @@
 body {
 background-color: black;
- /*background-image: url("comodore64.png");
- background-size: cover;
- background-repeat: no-repeat;*/
- /*margin: 0;*/
- /*padding: 0;*/
+
  font-family: monospace;
  text-align: left;
  font-color: green;
@@ -13,14 +9,16 @@ background-color: black;
 code {
 	font-family: monospace;
 	font-size: auto;
-	color: white;
+	color: grey;
 	text-align: left;
 	font-weight: 1000;
 }
 p, h1,h2,h3,h4,h5,h6{
- color: green;
+ color: forestgreen;
 }
-
+p {
+	line-height: 25px
+}
 /*#container {
   width: 1000px;
   margin: 0;
@@ -146,3 +144,8 @@ p, h1,h2,h3,h4,h5,h6{
 .dropdown1:hover .dropdown-content1 {display: block;}
 
 .dropdown1:hover .dropbtn1 {background-color: grey;}
+
+.textwrap {
+	float: right;
+	margin: 20px;
+}

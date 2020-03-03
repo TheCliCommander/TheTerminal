@@ -17,10 +17,46 @@
 </div>
 <body>
 	<h1>Lets dive deeper into Linux commands!</h1>
-	<h3>We will talk about navigating the terminal first</h3>
-	<p>We already talked about the main commands for navigating the terminal, but lets see what options those commands have and some useful tricks we can do with them</p>
-	<p>Let's start with some useful 'shortcut' commands: understand that <code>~</code> or <code>~/</code> is a shortcut for your home directory. If you are deep in a subdirectory tree and need to return to your home folder you can use: <code>cd ~/</code>. Just using the tilde will also work:<code>cd ~</code>. Using <code>cd</code> by itself will also take you back to your home directory. The tilde and forward slash come in handy most when typing absolute paths. If you didnt use the tilde you would have to write out the whole path from home <code>/home/user/Linux/NetworkManager</code>. Also note that <code>~/</code> is not the same as <code>/</code>. The forward slash by itself represents your root directory, which is the directory all others are stored in. It's kind of like the C:\ drive in Windows. 
-	<p>The <code>cd</code> command has a few options: you can use <code>cd -</code> to go to the last directory you were in, which is not the same as going to the parent dir with <code>cd ..</code>. With this in mind we'll take this opportunity to discuss absolute and relative file paths. If you are in the dir that conatains the subdir you want to navigate to, you can use the relative path: <code>cd nameOfDirectory</code>. However if you need to navigate to something that is outside your current working directory, you must specify the full(absolute) path to the file/dir: <code>cd ~/Linux/NetworkManager</code>.</p>
-	<p><strong>Take a look at the images below to see the <code>cd</code> command in action. You'll notice we've also used the <code>ls</code> and <code>pwd</code> commands to list the contents of the directory and verify which directory we are currently in. Also notice that your current working directory is shown in the prompt line containing the username and hostname. <code>user@theterminal:~/Linux/Commandline</strong></p>
-	<img src="cdUbuntu.png">
+	<br>
+	<br>
+	<br>
+	<h2>We will talk about navigating the terminal first.</h2>
+	<br>
+	<h4>Note: the terms '<code>directory</code>'' and '<code>folder</code>' can be used interchangeably. For the sake of avoiding too much repition I will use them both. There is no difference between the two.</h4><br>
+
+	<p>We already talked about the main commands for navigating the terminal on the <code>~/Linux</code> page, be sure to take a moment to read that. Lets see what options those commands have and some useful tricks we can do with them.</p>
+
+	<p>Let's start with some useful 'shortcut' commands: understand that <code>~</code> <em>or</em> <code>~/</code> is a shortcut for your home directory. If you are
+
+	deep in a subdirectory tree and need to return to your home folder you can use: <code>cd ~/</code>. Just using the tilde will also work:<code>cd ~</code>
+
+	. Using <code>cd</code> by itself will also take you back to your home directory. The tilde and forward slash come in handy most when typing absolute
+
+	paths. If you didnt use the tilde you would have to write out the whole path from home <code>/home/user/Linux/NetworkManager</code>.<img src="cdUbuntu.png" class=textwrap alt="image" height="300" width="400">
+	Also note that <code>~/</code> is not the same as <code>/</code>. The forward slash by itself represents your root directory, which is the directory all others are stored in. It's kind of like the C:\ drive in Windows.</p>
+
+	<p>The <code>cd</code> command has a few options: you can use <code>cd -</code> to go to the last directory you were in, which is not the same as going to the parent dir with <code>cd ..</code>. 
+
+	With this in mind we'll take this opportunity to discuss absolute and relative file paths. If you are in the dir that conatains the subdir you want to 
+
+	navigate to, you can use the relative path: <code>cd nameOfDirectory</code>. However if you need to navigate to something that is outside your current working directory, you must specify the full(absolute) path to the file/dir: <code>cd ~/Linux/NetworkManager</code>.</p>
+	
+	<p><strong>Take a look at the image to the right to see the <code>cd</code> command in action. You'll notice we've also used the <code>ls</code> and <code>pwd</code> commands to list the contents of the directory and verify which directory we are currently in. Also notice that your current working directory is shown in the prompt line containing the username and hostname. <code>user@theterminal:~/Linux/Commandline</code></strong></p>
+	
+	<p>So you can see the change directory (<code>cd</code>) command is essential and has some neat little tricks. Take a moment to play around with it and get comfortable.</p> 
+    <br>
+    <br>
+    <br>
+    <br>
+	<br><h2>We'll talk about some options for the <code>ls</code> command next.</h2><br>
+	
+	<p>The list (<code>ls</code>) command lists the directories and files in your current directory, <em>OR</em>, as I'll demonstrate, will list the files 
+
+	and directories that live in a specified file path. <code>ls</code> by itself will just list the names of the files and directories. If you need to know 
+
+	which permissions are set for each file and directory you can use the <code>ls -l</code> (long list) command. Check out <code>~/Linux/Permissions</code> for more information on how permissions work.<img src="lsUbuntu.png" class=textwrap alt="image" height="300" width="400"> 
+	<br>
+	The <code>ls -l</code> command also 
+
+	displays the date the files were created and their sizes in bytes. You can use the <code>-l</code> option in combination with any other option. Take a look at the image to see what I mean. Before I explain the next option for the <code>ls</code> command, you should understand that in Linux we have what are called "hidden" files and directories. These items will not appear when you run a simple <code>ls</code> command. To include hidden files in your list you need to add an <code>-a</code> option: <code>ls -a</code>. You can also get a long list with hidden items included: <code>ls -la</code>. The last option we will cover is the <code>-h</code> option. <code>-h</code> means 'human readable', and this refers to the file sizes. Instead of displaying the sizes in bytes they will be displayed as kb(kilobytes) which is much easier to understand. Using the <code>-h</code> option by itself will not change the output, it is used along with the <code>-l</code> option: <code>ls -lh</code>. Remember when I said you can list the dirs and files by providing a file path? Well as promised I will explain: Say you have a file in a subdirectory of your <code>Desktop</code> folder that you need to know the size/permissions of, but you are nested in your <code>Documents</code> directory and don't want to navigate out of it. In this situation you can provide an absolute path to the file/dir you want to see: <code>ls -lh ~/Desktop/subdirectory</code> Pretty convenient right? Take a look at the image to get a visual understanding.</p>
 </body>
