@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>~/Linux/Commandline</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="linuxStyle.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <div class="header">
@@ -17,8 +17,10 @@
 </div>
 <body>
 	<h1>Lets dive deeper into Linux commands!</h1>
-	<h3>Lets talk about navigating the terminal first</h3>
+	<h3>We will talk about navigating the terminal first</h3>
 	<p>We already talked about the main commands for navigating the terminal, but lets see what options those commands have and some useful tricks we can do with them</p>
-	<p>Let's start with some useful 'shortcut' commands: understand that <strong>~</strong> or <strong>~/</strong> is a shortcut for your home directory. If you are deep in a subdirectory tree and need to return to your home folder you can use: <strong>cd ~/</strong> Just using the tilde will also work: <strong>cd ~</strong>
-	<p>The <strong>cd</strong> command has a few options: you can use <strong>cd -</strong> to go to the last directory you were in, which is not the same as going to the parent dir with <bold>cd ..</bold> With this in mind we'll take this opportunity to discuss absolute and relative file paths. If you are in the dir that conatains the subdir you want to navigate to, you can use the relative path: <strong>cd nameOfDirectory</strong>. However if you need to navigate to something that is outside your current working directory, you must specify the full(absolute) path to the file/dir: <strong>cd ~/Linux/NetworkManager</strong></p>
+	<p>Let's start with some useful 'shortcut' commands: understand that <code>~</code> or <code>~/</code> is a shortcut for your home directory. If you are deep in a subdirectory tree and need to return to your home folder you can use: <code>cd ~/</code>. Just using the tilde will also work:<code>cd ~</code>. Using <code>cd</code> by itself will also take you back to your home directory. The tilde and forward slash come in handy most when typing absolute paths. If you didnt use the tilde you would have to write out the whole path from home <code>/home/user/Linux/NetworkManager</code>. Also note that <code>~/</code> is not the same as <code>/</code>. The forward slash by itself represents your root directory, which is the directory all others are stored in. It's kind of like the C:\ drive in Windows. 
+	<p>The <code>cd</code> command has a few options: you can use <code>cd -</code> to go to the last directory you were in, which is not the same as going to the parent dir with <code>cd ..</code>. With this in mind we'll take this opportunity to discuss absolute and relative file paths. If you are in the dir that conatains the subdir you want to navigate to, you can use the relative path: <code>cd nameOfDirectory</code>. However if you need to navigate to something that is outside your current working directory, you must specify the full(absolute) path to the file/dir: <code>cd ~/Linux/NetworkManager</code>.</p>
+	<p><strong>Take a look at the images below to see the <code>cd</code> command in action. You'll notice we've also used the <code>ls</code> and <code>pwd</code> commands to list the contents of the directory and verify which directory we are currently in. Also notice that your current working directory is shown in the prompt line containing the username and hostname. <code>user@theterminal:~/Linux/Commandline</strong></p>
+	<img src="cdUbuntu.png">
 </body>

@@ -1,0 +1,148 @@
+body {
+background-color: black;
+ /*background-image: url("comodore64.png");
+ background-size: cover;
+ background-repeat: no-repeat;*/
+ /*margin: 0;*/
+ /*padding: 0;*/
+ font-family: monospace;
+ text-align: left;
+ font-color: green;
+ font-size: auto;
+}
+code {
+	font-family: monospace;
+	font-size: auto;
+	color: white;
+	text-align: left;
+	font-weight: 1000;
+}
+p, h1,h2,h3,h4,h5,h6{
+ color: green;
+}
+
+/*#container {
+  width: 1000px;
+  margin: 0;
+  padding: 0;
+  background: #6d6466;
+}*/
+#header {
+ width: auto;
+ height: auto;
+ margin: 0;
+ padding: 0;
+ border: 0;
+ background: black;
+}
+#header {
+ font-family: monospace;
+ font-size: 36px;
+ color: green;
+}
+#sidebar {
+ width: 250px;
+ height: 150px;
+ margin: 0;
+ padding: 0;
+ border: 0;
+ float: left;
+ background: transparent;
+}
+#content {
+ width: auto;
+ height: auto;
+ /*margin: 150;
+ padding: 0;*/
+ border: 0;
+ float: left;
+ background: black;
+}
+#content p {
+ font-family: monospace;
+ font-size: 14px;
+ color: #dddddd;
+
+}
+#footer {
+ width: auto;
+ height: auto;
+ margin: 0;
+ padding: 0;
+ border: 0;
+ float: left;
+ background: transparent;
+ /*clear:both;*/
+}
+
+.dropbtn {
+	background-color: black;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border:solid green 6px;
+	cursor: pointer;
+	
+}
+
+.dropdown {
+	position: relative;
+
+	display: inline-block;
+
+}
+.dropdown-content {
+	display: none;
+	position: relative;
+	background-color: black;
+	min-width: 160px;
+	z-index: 1;
+}
+.dropdown-content a {
+	color: green;
+	padding: 10px 10px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content a:hover {background-color: grey;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: grey;}
+
+
+
+.dropbtn1 {
+	background-color: black;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border:solid green 6px;
+	cursor: pointer;
+	
+}
+
+.dropdown1 {
+	position: relative;
+
+	display: inline-block;
+
+}
+.dropdown-content1 {
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 160px;
+	z-index: 1;
+}
+.dropdown-content1 a {
+	color: green;
+	padding: 10px 10px;
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content1 a:hover {background-color: grey;}
+
+.dropdown1:hover .dropdown-content1 {display: block;}
+
+.dropdown1:hover .dropbtn1 {background-color: grey;}
