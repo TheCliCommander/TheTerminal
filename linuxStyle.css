@@ -13,11 +13,14 @@ code {
 	text-align: left;
 	font-weight: 1000;
 }
-p, h1,h2,h3,h4,h5,h6{
+p, h1,h3,h4,h5,h6{
  color: forestgreen;
 }
 p {
 	line-height: 25px
+}
+h2{
+	color: darkblue;
 }
 /*#container {
   width: 1000px;

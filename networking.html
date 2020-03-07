@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Terminal</title>
+<link rel="stylesheet" type="text/css" href="linuxStyle.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<div class="header">
+<div class="dropdown">
+<button class="dropbtn">user@theterminal:~/$ cd</button>
+<div class="dropdown-content">
+<!-- <a href="https://www.hackthissite.org">~/HackThisSite</a> -->
+<a href="Linux.html">~/Linux</a>
+<a href=#>~/Python</a>
+</div>
+</div>
+</div>
+<body>
+<h1>Networking With Linux Is Fun!</h1>
+<br>
+<em>I'm writing this guide assuming you have a basic understanding of networking in general. A basic understanding of the OSI model is suggested. Check out my page [placeholder] to learn the essentials.</em>
+<br>
+<br>
+<h2>Discovering your private IP address:</h2>
+<p>To discover your private IP address you can use the <code>ip</code> command. <em>Note: it may still be popular to use the <code>ifconfig</code> command but this is deprecated and should be replaced with the <code>ip</code> command.</em> You should understand that your machine has what is called a 'Network Interface Controller'. This device is what communicates with your LAN and the internet. It will have a name like <code>eth0</code> <em>or</em> <code>wlan0</code>(the latter of which is your wireless or 'WiFi' interface, while the former is your wired ethernet connection). These devices have two identifying addresses. One is a unique hardcoded address called a link layer or  media access control/MAC address. The other is called the Internet Protocol address, or IP address. We'll talk about the MAC address in another section.</p>
+<br>
+<p>To use the <code>ip</code> command to discover your current ipv4 address use the following syntax <code>ip -4 a</code>. For your ipv6 address: <code>ip -6 a</code>. To get both ipv4 and ipv6 just use <code>ip a</code>. Really simple right?</p>
+
+
+
+</body>
+</html>

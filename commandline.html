@@ -22,7 +22,8 @@
 	<br>
 	<h2>We will talk about navigating the terminal first.</h2>
 	<br>
-	<h4>Note: the terms '<code>directory</code>'' and '<code>folder</code>' can be used interchangeably. For the sake of avoiding too much repition I will use them both. There is no difference between the two.</h4><br>
+	<h4><em>Note: the terms '<code>directory</code>' and '<code>folder</code>' can be used interchangeably. For the sake of avoiding too much repition I will use them both. There is no difference between the two.</h4></em>
+	<br>
 
 	<p>We already talked about the main commands for navigating the terminal on the <code>~/Linux</code> page, be sure to take a moment to read that. Lets see what options those commands have and some useful tricks we can do with them.</p>
 
@@ -32,7 +33,7 @@
 
 	. Using <code>cd</code> by itself will also take you back to your home directory. The tilde and forward slash come in handy most when typing absolute
 
-	paths. If you didnt use the tilde you would have to write out the whole path from home <code>/home/user/Linux/NetworkManager</code>.<img src="cdUbuntu.png" class=textwrap alt="image" height="300" width="400">
+	paths. If you didnt use the tilde you would have to write out the whole path from home <code>/home/user/Linux/NetworkManager</code>.<img src="cdUbuntu.png" class=textwrap alt="image" height="500" width="700">
 	Also note that <code>~/</code> is not the same as <code>/</code>. The forward slash by itself represents your root directory, which is the directory all others are stored in. It's kind of like the C:\ drive in Windows.</p>
 
 	<p>The <code>cd</code> command has a few options: you can use <code>cd -</code> to go to the last directory you were in, which is not the same as going to the parent dir with <code>cd ..</code>. 
@@ -54,9 +55,32 @@
 
 	and directories that live in a specified file path. <code>ls</code> by itself will just list the names of the files and directories. If you need to know 
 
-	which permissions are set for each file and directory you can use the <code>ls -l</code> (long list) command. Check out <code>~/Linux/Permissions</code> for more information on how permissions work.<img src="lsUbuntu.png" class=textwrap alt="image" height="300" width="400"> 
+	which permissions are set for each file and directory you can use the <code>ls -l</code> (long list) command. Check out <code>~/Linux/Permissions</code> for more information on how permissions work.<img src="lsUbuntu.png" class=textwrap alt="image" height="500" width="700"> 
 	<br>
 	The <code>ls -l</code> command also 
 
 	displays the date the files were created and their sizes in bytes. You can use the <code>-l</code> option in combination with any other option. Take a look at the image to see what I mean. Before I explain the next option for the <code>ls</code> command, you should understand that in Linux we have what are called "hidden" files and directories. These items will not appear when you run a simple <code>ls</code> command. To include hidden files in your list you need to add an <code>-a</code> option: <code>ls -a</code>. You can also get a long list with hidden items included: <code>ls -la</code>. The last option we will cover is the <code>-h</code> option. <code>-h</code> means 'human readable', and this refers to the file sizes. Instead of displaying the sizes in bytes they will be displayed as kb(kilobytes) which is much easier to understand. Using the <code>-h</code> option by itself will not change the output, it is used along with the <code>-l</code> option: <code>ls -lh</code>. Remember when I said you can list the dirs and files by providing a file path? Well as promised I will explain: Say you have a file in a subdirectory of your <code>Desktop</code> folder that you need to know the size/permissions of, but you are nested in your <code>Documents</code> directory and don't want to navigate out of it. In this situation you can provide an absolute path to the file/dir you want to see: <code>ls -lh ~/Desktop/subdirectory</code> Pretty convenient right? Take a look at the image to get a visual understanding.</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2> Let's discuss how to create a new directory!</h2>
+	<br>
+	<br>
+	<p>To create a directory in Linux we use the <code>mkdir</code> (make directory) command.<img src="mkdirUbuntu.png" class=textwrap alt="image" height="250" width="550"> You can use this command using both relative and absolute paths. The syntax for the <em>relative</em> path is as follows: <code>mkdir name_of_dir</code> where <code>name_of_dir</code> is the name you chose for your new directory. The new directory will be created inside your current working directory. To use <code>mkdir</code> with an <em>absolute</em> path: <code>mkdir ~/Documents/name_of_dir</code>. This will create a new folder in your <code>~/Documents</code> directory. It doesn't have to live in the <code>~/Documents</code> directory, I just chose that one for this example. You can create a directory from any parent directory you wish as long as you have write privelages. 
+	<br>
+	<br>
+	<br>
+	<br>
+	<h2>Next we will learn how to create new empty files!</h2>
+	<br>
+	<br>
+	<p>We can use a few different commands to create empty files.<img src="newfiles.png" class=textwrap alt="image" height="250" width="550"> We will discuss the <code>touch</code> and <code>fallocate</code> commands in this lesson. The <code>touch</code> command is the easiest, most basic command we can use to create an empty file. The syntax is as follows: <code>touch newfile</code> where <code>newfile</code> is the name of the file you are creating. You can use this command with both relative and absolute file paths. We can also allocate any available amount of space while creating a new file using the <code>fallocate</code> command. If you wanted to create a file with 10 megabytes of space allocated you would run: <code>fallocate -l 10M newfile</code> replacing newfile with the desired name for your new file. You can allocate sizes in gigabytes and kilobytes too. So you can see in the image that the <code>touch</code> command creates an empty file of size 0, and the fallocate command creates files of size 10MB, 10KB, and 10GB respectively. 
+	</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p><em>The basic commands discussed on this page should get you started on your journey into using Linux. However, they only scratch the surface. Surf the site to learn some more advanced stuff and uncover the full power of the Linux commandline!</p></em>
 </body>
